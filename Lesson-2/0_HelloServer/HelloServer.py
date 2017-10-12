@@ -20,6 +20,6 @@ class HelloHandler(BaseHTTPRequestHandler):
         self.wfile.write("Hello, HTTP!\n".encode())
 
 if __name__ == '__main__':
-    server_address = ('', 8000)  # Serve on all addresses, port 8000.
+    server_address = ('', 5000)  # Serve on all addresses, port 8000.
     httpd = HTTPServer(server_address, HelloHandler)
     httpd.serve_forever()
